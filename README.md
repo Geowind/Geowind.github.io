@@ -32,4 +32,3 @@
 口号：Everyone can make a difference!
 
 微博：[@南华大学经纬度团队](http://weibo.com/geowind)
->>>>>>> add README.md
