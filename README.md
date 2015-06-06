@@ -31,4 +31,6 @@
 
 口号：Everyone can make a difference!
 
+Logo:![](https://github.com/Geowind/geowind.github.io/blob/master/logo.png)
+
 微博：[@南华大学经纬度团队](http://weibo.com/geowind)
