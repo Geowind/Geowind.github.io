@@ -12,3 +12,9 @@
 .follow .weibo:hover{
     color: #0097dd;
 }
+/* 媒体查询 */
+@media screen and (max-width: 960px) {
+    .intro, .follow{
+        width: 100%;
+    }
+}
