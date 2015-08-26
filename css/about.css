@@ -1,0 +1,14 @@
+.intro{
+    width: 70%;
+    font-size: 1.2em;
+    text-indent: 2em;
+}
+.follow{
+    width: 30%;
+}
+.follow .main{
+    padding-left: 20px;
+}
+.follow .weibo:hover{
+    color: #0097dd;
+}
