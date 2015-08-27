@@ -222,7 +222,7 @@
   {
     "name": "孙恒哲",
     "head": "images/sunhengzhe.png",
-    "desc": "梦想是成为一名前端攻城狮",
+    "desc": "热衷HTML5技术，喜欢用CSS3制作好玩的特效<br>看见自己做的网站上线是最有成就感的事情！<br>梦想是成为一名卓越的前端攻城狮",
     "github": "https://github.com/sunhengzhe",
     "weibo": "http://weibo.com/u/3025220401",
     "grade": "2012",
@@ -244,13 +244,13 @@
   {
     "name": "朱霜",
     "head": "images/head.jpg",
-    "desc": "",
-    "github": "",
-    "weibo": "",
+    "desc": " 热衷于Android、Python和Open Source，喜欢钢琴，音乐，旅游，天文/地理爱好者，Alphabet/Google脑残粉",
+    "github": "https://github.com/Folyd",
+    "weibo": "http://weibo.com/wichna",
     "grade": "2011",
     "sex": "male",
-    "qq": "",
-    "tel": ""
+    "qq": "841962140",
+    "tel": "18975679179"
   },
   {
     "name": "苏杭",

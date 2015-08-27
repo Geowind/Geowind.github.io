@@ -83,7 +83,7 @@ $(function () {
                     "left": parseInt(box.css("left")),
                     "top": box.height() + parseFloat(box.css("top")) + 40
                 };
-                boxWrap.height(curHeights[0].top + 50);
+                boxWrap.height(curHeights[0].top + 40);
             }
         });
     }

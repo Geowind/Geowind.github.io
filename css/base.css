@@ -1,4 +1,4 @@
-html, body, ul, li{
+html, body, ul, li,tr,td{
     padding: 0;
     margin: 0;
 }
@@ -72,6 +72,7 @@ header.colorful {
 }
 
 footer.copyright {
+    margin-top: 10px;
     border-top: 1px #ccc solid;
     width: 100%;
     height: 40px;
@@ -142,7 +143,9 @@ footer.copyright {
         margin: 0;
     }
     .menubar{
-        float: left;
+        float: none;
+        clear: both;
+        text-align: center;
     }
     .menu li > a:first-child{
         padding-left: 0;
