@@ -122,25 +122,25 @@
   },
   {
     "name": "陈土燊",
-    "head": "images/chentushen.jpg",
-    "desc": "",
-    "github": "",
-    "weibo": "",
+    "head": "images/chentushen.png",
+    "desc": "努力与坚持",
+    "github": "https://github.com/XYScience",
+    "weibo": "http://weibo.com/u/5313187615",
     "grade": "2012",
     "sex": "male",
-    "qq": "",
-    "tel": ""
+    "qq": "274240671",
+    "tel": "15211486837"
   },
   {
     "name": "邢运",
-    "head": "images/xingyun.jpg",
-    "desc": "",
-    "github": "",
-    "weibo": "",
+    "head": "images/xingyun.png",
+    "desc": "反省不是去后悔，是为前进铺路",
+    "github": "https://github.com/XYCTS",
+    "weibo": "http://weibo.com/u/3941575162",
     "grade": "2012",
     "sex": "female",
-    "qq": "",
-    "tel": ""
+    "qq": "1284791210",
+    "tel": "18473402145"
   },
   {
     "name": "郭红",
