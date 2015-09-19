@@ -30,7 +30,9 @@ $(function () {
 
     function loadItem(){
         $.getJSON("js/members.json", function (result) {
+            //如果有过滤条件
             if(filter){
+                //过滤
                 result = result.filter(function(item, index){
                     var flag = true;
                     for(var key in filter){
