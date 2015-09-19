@@ -67,7 +67,7 @@ $(function () {
                 '<img class="head" src="' + m.head + '" width="150" height="150"/>' +
                 '</div>' +
                 '<section>' +
-                '<h3>' + m.name + social + '</h3>' +
+                '<h3>' + m.name  + '</h3><span class="major">( ' + m.grade + "级" + m.major + ' )</span>' + social +
                 '<article>' + (m.desc ? m.desc : "这个人太懒，什么都没有留下") + '</article>' +
                 '</section>' +
                 '</div>');

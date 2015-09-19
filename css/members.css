@@ -50,6 +50,11 @@
     box-shadow: 0 0 15px #ccc;
 }
 
+.box-item .major, .box-item h3{
+    display: inline-block;
+    margin-right: 10px;
+}
+
 .social a{
     display: inline-block;
     margin-left: 10px;
