@@ -1,8 +1,6 @@
 
 #Geowind官网
 
-风格模仿[https://training.github.com/](https://training.github.com/)页面。
-
 参考：[华中科技大学联创团队](http://www.hustunique.com/)
 [冰岩作坊](http://www.bingyan.net/)
 

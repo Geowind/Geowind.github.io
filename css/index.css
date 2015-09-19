@@ -1,0 +1,129 @@
+header {
+    height: 100px;
+}
+
+#content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #1875c6;
+    box-shadow: 0 5px 5px 0 #ccc;
+}
+
+#content p {
+    font-size: 1.5em;
+}
+
+#content .main {
+    height: 300px;
+    padding-top: 40px;
+    color: #fff;
+    font-size: larger;
+}
+
+#content .pic, #content .text {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+#content img {
+    position: absolute;
+    border: 5px #fff solid;
+    box-shadow: 0 0 10px #000;
+    transition: all 0.8s;
+}
+
+#content img:hover {
+    transform: rotateZ(0deg) scale(1.2);
+    z-index: 999;
+}
+
+.img1 {
+    transform: rotateZ(10deg);
+    right: 40px;
+}
+
+.img2 {
+    transform: rotateZ(-5deg);
+    right: 150px;
+    top: 50px;
+}
+
+.join {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #6bd56d;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.join:hover {
+    box-shadow: 0 0 10px #6bd56d;
+    font-weight: bold;
+}
+
+.join::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    bottom: -50%;
+    left: -50%;
+    background: linear-gradient(to top, transparent 0%, #fff 2%, #fff 8%, transparent 10%);
+    transform: rotateZ(45deg) translate(-50%, 0);
+    opacity: 0;
+}
+
+.join:hover:after {
+    animation: card-shiny 0.8s forwards 0.2s;
+}
+
+@keyframes card-shiny {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        transform: rotateZ(45deg) translate(50%, -150%);
+    }
+}
+
+.item {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    color: #333;
+}
+
+.item div {
+    padding: 0 10px;
+}
+
+.fun {
+    overflow: hidden;
+}
+
+/* 媒体查询 */
+@media screen and (max-width: 960px) {
+    #content .pic {
+        display: none;
+    }
+
+    #content .text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .item {
+        width: 100%;
+    }
+
+    header {
+        height: 200px;
+    }
+}
