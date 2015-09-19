@@ -288,6 +288,18 @@
     "major": "软件工程系"
   },
   {
+    "name": "严利华",
+    "head": "images/yanlihua.jpg",
+    "desc": "热爱Linux，擅长Python爬虫，喜欢看书，喜欢折腾，混在IT界的文艺妹纸一枚",
+    "github": "https://github.com/Thorntan",
+    "weibo": "http://weibo.com/yanleeh",
+    "grade": "2011",
+    "sex": "female",
+    "qq": "",
+    "tel": "",
+    "major": "软件工程系"
+  },
+  {
     "name": "苏杭",
     "head": "images/suhang.jpg",
     "desc": "201109生于南华，201506卒于南华。",
