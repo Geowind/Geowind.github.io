@@ -39,6 +39,10 @@ header {
     z-index: 999;
 }
 
+#content h1{
+    margin-bottom: 0;
+}
+
 .img1 {
     transform: rotateZ(10deg);
     right: 40px;
