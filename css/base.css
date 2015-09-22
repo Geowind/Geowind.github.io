@@ -104,8 +104,8 @@ footer.copyright {
     opacity: 1;
 }
 
-.tShadow{
-    /*text-shadow: 0 0 5px #fff;*/
+.tShadow a{
+    color: #fff;
 }
 
 #logo{
