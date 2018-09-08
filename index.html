@@ -1,88 +1,235 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head lang="ch">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-    <title>经纬度团队</title>
-    <link rel="shortcut icon" href="images/favicon.ico" />
-    <link href="css/base.css" rel="stylesheet"/>
-    <link href="css/index.css" rel="stylesheet">
-</head>
-<body>
-<header class="colorful">
-    <div class="container">
-        <div class="title clearfix">
-            <div class="left">
-                <h1 class="tShadow"><a href="index.html" target="_self"><i id="logo"></i>经纬度团队</a></h1>
-            </div>
-            <nav class="menubar">
-                <ul class="menu">
-                    <li>
-                        <a class="active">首页</a>
-                    </li>
-                    <li>
-                        <a href="achieve.html">成果</a>
-                    </li>
-                    <li>
-                        <a href="http://blog.geowind.cn/" target="_blank">博客</a>
-                    </li>
-                    <li>
-                        <a href="members.html">风采</a>
-                    </li>
-                    <li>
-                        <a href="about.html">关于</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</header>
-<div id="content">
-    <div class="container">
-        <div class="main">
-            <div class="pic left">
-                <img src="images/img1.jpg" width="300" class="img1"/>
-                <img src="images/img2.JPG" width="300" class="img2"/>
-            </div>
-            <div class="text left">
-                <h1>南华大学经纬度团队</h1>
-                <small>一个专注于Android开发，积极参加各大科技赛事、热爱互联网的大学生团队</small>
-                <p>Everyone can make a difference</p>
-                <a class="join" href="https://jinshuju.net/f/DF3U9g" target="_blank">加入我们</a>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="fun">
-    <div class="container">
-        <div class="item">
-            <div>
-                <h3>志同道合的小伙伴</h3>
-                <p>你是酷爱编程的程序猿</p>
-                <p>或者创意十足的设计狮</p>
-                <p>加入我们，团队有你更精彩！</p>
-            </div>
-        </div>
-        <div class="item">
-            <div>
-                <h3>享受编码乐趣</h3>
-                <p>想感受项目run起来的成就</p>
-                <p>还有消灭一只大bug的喜悦</p>
-                <p>加入我们，一起享受乐趣！</p>
-            </div>
-        </div>
-        <div class="item">
-            <div>
-                <h3>让自己更加强大</h3>
-                <p>想成为技术大牛，面对技术谈笑风生？</p>
-                <p>也想参加各种比赛，拿大奖拿到手软？</p>
-                <p>加入我们，让我们一起变强！</p>
-            </div>
-        </div>
-    </div>
-</div>
-<footer class="copyright">
-    Copyright©2014-2015 南华大学经纬度团队
-</footer>
-</body>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Welcome to Geowind </title>
+
+		<style>
+			body,
+			html {
+				position: absolute;
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				touch-action: none;
+				content-zooming: none;
+				background: #fff;
+			}
+			
+			canvas {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				user-select: none;
+				background: #000;
+			}
+			
+			h1 {
+				background-color: #fff
+			}
+            
+       #center-in-center{
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+		</style>
+       <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	</head>
+
+	<body>
+
+          
+
+		<script>
+			"use strict"; {
+				const txt = 'GEOWIND OF USC';
+				const viscosity = 0.005;
+				const stiffness = 0.99;
+				class Point {
+					constructor(i, x, y) {
+						this.c = null;
+						this.x0 = x;
+						this.y0 = y;
+						this.x = x + Math.sin(i) * 100;
+						this.y = y + Math.cos(i) * 100;
+						this.vx = 0.0;
+						this.vy = 0.0;
+						this.a = 0.0;
+						this.s = 0.0;
+						this.p0 = this;
+						this.p1 = this;
+						this.t = 0;
+					}
+					texture(c, color) {
+						this.c = document.createElement("canvas");
+						const ctx = this.c.getContext("2d");
+						this.c.width = this.c.height = 400;
+						ctx.font = "500px Arial Black, Arial";
+						ctx.fillStyle = color;
+						ctx.textAlign = "center";
+						ctx.fillText(c, 200, 385);
+					}
+					drawSegment() {
+						ctx.beginPath();
+						ctx.strokeStyle = "#666";
+						ctx.moveTo(this.p0.x, this.p0.y);
+						ctx.lineTo(this.x, this.y);
+						ctx.lineTo(this.p1.x, this.p1.y);
+						ctx.stroke();
+						ctx.beginPath();
+						ctx.arc(this.x, this.y, 3, 0, 2 * Math.PI);
+						ctx.stroke();
+					}
+					draw() {
+						const fx = (this.x0 - this.x) * viscosity;
+						const fy = (this.y0 - this.y) * viscosity;
+						this.vx *= stiffness;
+						this.vy *= stiffness;
+						this.vx += fx;
+						this.vy += fy;
+						this.x += this.vx;
+						this.y += this.vy;
+						if(this.c !== null) {
+							ctx.beginPath();
+							ctx.save();
+							ctx.translate(this.x, this.y);
+							const dy = this.p1.x - this.p0.x;
+							const dx = this.p1.y - this.p0.y;
+							this.a = Math.atan2(dx, dy);
+							this.s = Math.sqrt(dy * dy + dx * dx) / 2;
+							ctx.rotate(this.a);
+							ctx.drawImage(this.c, -this.s * 0.5, -this.s * 0.5, this.s, this.s);
+							ctx.restore();
+						}
+					}
+				}
+				const points = [];
+				const canvas = {
+					init() {
+						this.elem = document.createElement("canvas");
+						document.body.appendChild(this.elem);
+						this.resize();
+						window.addEventListener("resize", () => this.resize(), false);
+						return this.elem.getContext("2d");
+					},
+					resize() {
+						this.width = this.elem.width = this.elem.offsetWidth;
+						this.height = this.elem.height = this.elem.offsetHeight;
+						let x = 0;
+						const sx = this.width / (txt.length + 1);
+						for(const p of points) {
+							p.x0 = x;
+							p.y0 = canvas.height / 2;
+							x += sx;
+						}
+					}
+				};
+				const ctx = canvas.init();
+				ctx.imageSmoothingEnabled = true;
+				const pointer = {
+					x: 0,
+					y: 0,
+					dx: 0,
+					dy: 0,
+					drag: null,
+					over: null,
+					down(e, touch) {
+						this.move(e, touch);
+						if(this.over) {
+							this.dx = this.x - this.over.x;
+							this.dy = this.y - this.over.y;
+							this.drag = this.over;
+							canvas.elem.style.cursor = "move";
+						}
+					},
+					up(e, touch) {
+						this.drag = null;
+						canvas.elem.style.cursor = "default";
+					},
+					move(e, touch) {
+						const pointer = touch ? e.targetTouches[0] : e;
+						this.x = pointer.clientX;
+						this.y = pointer.clientY;
+						this.over = null;
+						if(this.drag === null) {
+							for(const p of points) {
+								const dx = this.x - p.x;
+								const dy = this.y - p.y;
+								const d = Math.sqrt(dx * dx + dy * dy);
+								if(d < p.s * 0.5) {
+									canvas.elem.style.cursor = "pointer";
+									this.over = p;
+									break;
+								} else {
+									canvas.elem.style.cursor = "default";
+								}
+							}
+						}
+					},
+					init() {
+						window.addEventListener("mousedown", e => this.down(e, false), false);
+						window.addEventListener("touchstart", e => this.down(e, true), false);
+						window.addEventListener("mousemove", e => this.move(e, false), false);
+						canvas.elem.addEventListener("touchmove", e => this.move(e, true), false);
+						window.addEventListener("mouseup", e => this.up(e, false), false);
+						window.addEventListener("touchend", e => this.up(e, true), false);
+					}
+				}; {
+					let x = 0;
+					const sx = canvas.width / (txt.length + 1);
+					for(let i = 0; i < txt.length + 2; i++) {
+						points.push(new Point(i, x, canvas.height / 2));
+						x += sx;
+					}
+					for(let i = 1; i < txt.length + 1; i++) {
+						const p = points[i];
+						p.p0 = points[i - 1];
+						p.p1 = points[i + 1];
+						p.s = sx;
+						p.texture(txt.charAt(i - 1), i === 5 ? "#f80" : "#fff");
+					}
+				}
+				const run = () => {
+					requestAnimationFrame(run);
+					ctx.clearRect(0, 0, canvas.width, canvas.height);
+					for(const p of points) {
+						if(pointer.drag === p) {
+							p.x = pointer.x - pointer.dx;
+							p.y = pointer.y - pointer.dy;
+						}
+						p.draw();
+					}
+					for(const p of points) {
+						p.drawSegment();
+					}
+				}
+				pointer.init();
+				run();
+			}
+		</script>
+
+<button type="button" class="btn btn-default btn-hide" id="center-in-center" onclick="javascrtpt:window.location.href='home.html'">
+  <span class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true" ></span> 
+</button>
+				<audio autoplay="" loop=""><source src="mp3/music.mp3"></audio>
+
+	</body>
+
 </html>
