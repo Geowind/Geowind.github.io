@@ -30,32 +30,41 @@
 			h1 {
 				background-color: #fff
 			}
-            
-       #center-in-center{
-            position: absolute;
-            top: 70%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            -moz-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            -o-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-        }
+			
+			#center-in-blow {
+				position: absolute;
+				top: 70%;
+				left: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				-moz-transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				-o-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+			}
+			
+			#center-in-top {
+				position: absolute;
+				top: 30%;
+				left: 50%;
+				width: 80%;
+				-webkit-transform: translate(-50%, -50%);
+				-moz-transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				-o-transform: translate(-50%, -50%);
+				color: #F1B0B7;
+				font: 15px/20px Georgia, "Times New Roman", Times, serif;
+			}
 		</style>
-       <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
-<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+		<!--可定制button样式-->
+        <link rel="stylesheet"href="css/buttons.css" />
+        <!--好看的图标样式-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery.flipping_text.js"></script>
+		<script type="text/javascript" src="js/modernizr.js"></script>
 	</head>
 
 	<body>
-
-          
 
 		<script>
 			"use strict"; {
@@ -225,10 +234,26 @@
 			}
 		</script>
 
-<button type="button" class="btn btn-default btn-hide" id="center-in-center" onclick="javascrtpt:window.location.href='home.html'">
-  <span class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true" ></span> 
-</button>
+		<article id="center-in-top">
+			<div class="intro">南华大学经纬度团队（Geowind）创建于2013年。</div>
+			<br />
+			<div class="intro" data-delay="1000">团队秉承不断创新和锐意进取的核心精神，旨在建立一个精英学生的IT技术平台。团队立足信息技术，积极跟踪技术发展的最前沿，通过承担科研项目，参加科技大赛等形式激发队员的无限激情和潜能， 并积极整合历届队员的优势和资源，共同创造团队和个人的未来.
+			</div>
+		</article>
+<script type="text/javascript">
+			$(document).ready(function() {
+				$(".intro").flipping_text({
+					tickerTime: 10,
+					customRandomChar: false,
+					tickerCount: 5,
+					opacityEffect: true,
+					resetOnChange: false
+				});
 
+			});
+</script>		
+<button  id="center-in-blow" class="button button-large button-plain button-borderless"
+	onclick="javascrtpt:window.location.href='home.html'"><i class="fa fa-angle-double-down"></i></button>
 	</body>
 
 </html>
