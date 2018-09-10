@@ -131,7 +131,7 @@
     "major": "软件工程卓越"
   }, 
  {
-    "name": "胡炯嵩"
+    "name": "胡炯嵩",
     "head": "",
     "desc": "知耻而后勇",
     "github": "",
@@ -278,7 +278,7 @@
     "head": "images/zhangtao.jpg",
     "desc": "You are more than what you have become now.",
     "github": "",
-    "weibo":""",
+    "weibo":"",
     "grade": "2015",
     "sex": "male",
     "qq": "984213164",
@@ -348,7 +348,7 @@
     "name": "刘宝玉",
     "head": "images/zhangtao.jpg",
     "desc": "Cease to struggle and you cease to live.",
-    "github": ,
+    "github":"" ,
     "weibo": "",
     "grade": "2015",
     "sex": "female",
@@ -360,7 +360,7 @@
     "name": "刘嘉玲",
     "head": "images/zhangtao.jpg",
     "desc": "我爱学习，优秀是一种习惯",
-    "github": ,
+    "github": "",
     "weibo": "",
     "grade": "2015",
     "sex": "female",
