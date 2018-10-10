@@ -4,8 +4,8 @@
 - 测试版托管于github上，后期可能会迁向云服务器
 - 后期会持续对官网改进，如对内学习平台，期待进一步上线  
 - 因github pages服务器在网络延时高且.org域名不能备案无法使用常用cdn加速，为提高访问速度，将官网静态图片文件存储置七牛云存储并生成外链形式访问
-- 七牛云存储提供测试域名，一个月将会回收   > peu5diy6k.bkt.clouddn.com (X)
-                            > pgd6gesz5.bkt.clouddn.com 
+- 七牛云存储提供测试域名，一个月将会回收   > peu5diy6k.bkt.clouddn.com (X)  
+                                      > pgd6gesz5.bkt.clouddn.com 
 ----------
 
 参考：[华中科技大学联创团队](http://www.hustunique.com/)
