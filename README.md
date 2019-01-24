@@ -7,7 +7,8 @@
 - 七牛云存储提供测试域名，一个月将会回收
 
   > <del>peu5diy6k.bkt.clouddn.com</del>  
-  > pgd6gesz5.bkt.clouddn.com 
+  > <del>pgd6gesz5.bkt.clouddn.com</del>
+  > 换了腾讯云对象存储
 ----------
 
 参考：[华中科技大学联创团队](http://www.hustunique.com/)
