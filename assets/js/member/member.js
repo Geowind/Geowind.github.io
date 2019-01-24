@@ -29,7 +29,7 @@ $(function () {
     }
 
     function loadItem(){
-        $.getJSON("js/members.json", function (result) {
+        $.getJSON("../members.json", function (result) {
             //如果有过滤条件
             if(filter){
                 //过滤

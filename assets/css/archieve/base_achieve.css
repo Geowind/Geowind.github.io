@@ -47,6 +47,10 @@ li {
     float: right;
 }
 
+.center {
+    text-align: center;
+}
+
 .margin0auto {
     margin: 0 auto;
 }
@@ -111,14 +115,14 @@ footer.copyright {
     opacity: 1;
 }
 
-.tShadow a{
+.tShadow{
     color: #fff;
 }
 
 #logo{
     display: inline-block;
     vertical-align: middle;
-    background: url("http://peu5diy6k.bkt.clouddn.com/images/logo.png") center no-repeat;
+    background: url("https://geowind-1257562436.cos.ap-chengdu.myqcloud.com/logo.png") center no-repeat;
     width: 50px;
     height: 50px;
     background-size: 50px 50px;
