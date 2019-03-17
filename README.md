@@ -1,4 +1,7 @@
 # Geowind website 
+
+[![Join the chat at https://gitter.im/Geowind-github-io/community](https://badges.gitter.im/Geowind-github-io/community.svg)](https://gitter.im/Geowind-github-io/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ----------
 
 参考：[华中科技大学联创团队](http://www.hustunique.com/)
